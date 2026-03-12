@@ -49,7 +49,7 @@ const AppLayout = () => {
 
   return (
     <div className="swap-site" data-testid="swap-site-shell">
-      <Navbar logoUrl={logoUrl} hideTagline={isHomePage} />
+      <Navbar logoUrl={logoUrl} />
       <main className="swap-main" data-testid="swap-main-content">
         <BackNavButton />
         <Outlet />

@@ -1,14 +1,14 @@
-export const logoUrl = "https://customer-assets.emergentagent.com/job_swap-companion/artifacts/sdkpsny1_swap%20logo%20without%20bg.png";
+export const logoUrl = "https://customer-assets.emergentagent.com/job_swap-companion/artifacts/a7xvkf4j_swap%20logo%20without%20bg.png";
 
 export const contactNumbers = ["7818832419", "6299805595"];
 export const contactEmail = "care@swap.org.in";
 
 export const socialHandles = {
-  instagram: "https://instagram.com/swap",
+  instagram: "https://www.instagram.com/swap.org.in/",
   facebook: "https://facebook.com/",
-  youtube: "https://youtube.com/",
-  x: "https://x.com/swap",
-  linkedin: "https://linkedin.com/company/swap",
+  youtube: "https://www.youtube.com/channel/UCtiHYBZKO88P7zl0gXfoVcw",
+  x: "https://x.com/InSwap33088",
+  linkedin: "https://www.linkedin.com/in/swap-org-4020973b7/",
 };
 
 export const siteKeywords =

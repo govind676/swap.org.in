@@ -27,7 +27,13 @@ export default function HomePage() {
       <section className="hero-section" data-testid="home-hero-section">
         <div className="hero-noise" aria-hidden="true" />
         <div className="swap-container hero-content" data-testid="home-hero-content" data-reveal="true">
-          <img src={logoUrl} alt="SWAP brand logo" className="hero-logo hero-logo-large" loading="eager" data-testid="hero-logo-image" />
+          <img
+            src={logoUrl}
+            alt="SWAP brand logo"
+            className="hero-logo hero-logo-large hero-logo-animated"
+            loading="eager"
+            data-testid="hero-logo-image"
+          />
           <p className="hero-subtitle" data-testid="hero-subtitle-text">
             Premium pet marketplace for India
           </p>
