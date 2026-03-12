@@ -17,7 +17,7 @@ export default function BlogDetailPage() {
           <p className="listing-description" data-testid="blog-not-found-description">
             This article is unavailable right now.
           </p>
-          <Button asChild className="hero-cta-button" data-testid="blog-not-found-back-button">
+          <Button asChild className="green-cta-button" data-testid="blog-not-found-back-button">
             <Link to="/blogs">Back to Blogs</Link>
           </Button>
         </div>
@@ -28,10 +28,19 @@ export default function BlogDetailPage() {
   return (
     <>
       <SeoManager
-        title={`SWAP Blog | ${blog.title}`}
-        description={blog.description}
+        title={blog.seoTitle ?? `SWAP Blog | ${blog.title}`}
+        description={blog.metaDescription ?? blog.description}
         image={blog.image}
         keywords={siteKeywords}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: blog.title,
+          description: blog.metaDescription ?? blog.description,
+          image: blog.image,
+          keywords: blog.focusKeyword,
+          author: { "@type": "Organization", name: "SWAP" },
+        }}
       />
 
       <article className="listing-hero" data-testid={`blog-detail-${blog.slug}`}>
@@ -51,7 +60,7 @@ export default function BlogDetailPage() {
               </p>
             ))}
 
-            <Button asChild className="hero-cta-button" data-testid={`blog-detail-back-${blog.slug}`}>
+            <Button asChild className="green-cta-button" data-testid={`blog-detail-back-${blog.slug}`}>
               <Link to="/blogs">Back to Blogs</Link>
             </Button>
           </div>

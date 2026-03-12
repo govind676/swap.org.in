@@ -63,7 +63,7 @@ export function PetCard({ pet, petType }) {
         <p className="pet-card-description" data-testid={`${petType}-card-description-${pet.slug}`}>
           {pet.description}
         </p>
-        <Button asChild className="glow-button" data-testid={`${petType}-card-action-${pet.slug}`}>
+        <Button asChild className="green-cta-button" data-testid={`${petType}-card-action-${pet.slug}`}>
           <Link to={`/${petType === "dogs" ? "dogs" : "cats"}/${pet.slug}`}>Make it Yours</Link>
         </Button>
       </CardContent>
@@ -76,6 +76,15 @@ export function ServiceCard({ service }) {
 
   return (
     <Card className="service-card" data-testid={`service-card-${service.slug}`} data-reveal="true">
+      <div className="service-card-image-wrap" data-testid={`service-image-wrap-${service.slug}`}>
+        <img
+          src={service.image}
+          alt={service.title}
+          className="service-card-image"
+          loading="lazy"
+          data-testid={`service-image-${service.slug}`}
+        />
+      </div>
       <CardContent className="service-card-content">
         <div className="service-icon-wrap" data-testid={`service-icon-wrap-${service.slug}`}>
           <Icon size={20} data-testid={`service-icon-${service.slug}`} />
@@ -104,7 +113,7 @@ export function BlogCard({ blog }) {
         <p className="pet-card-description" data-testid={`blog-description-${blog.slug}`}>
           {blog.description}
         </p>
-        <Button asChild variant="outline" className="read-more-button" data-testid={`blog-read-more-${blog.slug}`}>
+        <Button asChild className="green-cta-button" data-testid={`blog-read-more-${blog.slug}`}>
           <Link to={`/blogs/${blog.slug}`}>Read More</Link>
         </Button>
       </CardContent>

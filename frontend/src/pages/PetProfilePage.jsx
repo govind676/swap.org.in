@@ -62,10 +62,6 @@ export default function PetProfilePage({ petType }) {
                 <h2 data-testid={`profile-temperament-heading-${pet.slug}`}>Temperament</h2>
                 <p data-testid={`profile-temperament-text-${pet.slug}`}>{pet.temperament}</p>
               </article>
-              <article className="profile-info-card" data-testid={`profile-age-${pet.slug}`}>
-                <h2 data-testid={`profile-age-heading-${pet.slug}`}>Age</h2>
-                <p data-testid={`profile-age-text-${pet.slug}`}>{pet.age}</p>
-              </article>
               <article className="profile-info-card" data-testid={`profile-vaccination-${pet.slug}`}>
                 <h2 data-testid={`profile-vaccination-heading-${pet.slug}`}>Vaccination Status</h2>
                 <p data-testid={`profile-vaccination-text-${pet.slug}`}>{pet.vaccinationStatus}</p>
@@ -90,7 +86,7 @@ export default function PetProfilePage({ petType }) {
 
             <div className="profile-actions" data-testid={`profile-actions-${pet.slug}`}>
               <Button
-                className="hero-cta-button"
+                className="green-cta-button"
                 onClick={() => setShowEnquiryOptions((prev) => !prev)}
                 data-testid={`profile-enquire-button-${pet.slug}`}
               >

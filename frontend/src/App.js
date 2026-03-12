@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Navigate, Outlet, Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "@/pages/HomePage";
+import ExplorePage from "@/pages/ExplorePage";
 import PetsListingPage from "@/pages/PetsListingPage";
 import PetProfilePage from "@/pages/PetProfilePage";
 import ServicesPage from "@/pages/ServicesPage";
@@ -61,12 +62,13 @@ function App() {
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<HomePage />} />
+          <Route path="/explore" element={<ExplorePage />} />
           <Route
             path="/marketplace/dogs"
             element={
               <PetsListingPage
                 pageTitle="Dogs Marketplace"
-                pageDescription="Discover premium dog breeds with transparent health details and loving companion traits."
+                pageDescription="Browse 20 dog breeds commonly available in India with detailed temperament, grooming, and home suitability guidance."
                 pets={dogBreeds}
                 petType="dogs"
               />
@@ -77,7 +79,7 @@ function App() {
             element={
               <PetsListingPage
                 pageTitle="Cats Marketplace"
-                pageDescription="Browse 10 beautiful cat breeds selected for personality, comfort, and premium care compatibility."
+                pageDescription="Browse 20 cat breeds with profile-based care details, behavior notes, and indoor suitability information."
                 pets={catBreeds}
                 petType="cats"
               />

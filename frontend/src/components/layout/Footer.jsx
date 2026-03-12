@@ -1,6 +1,6 @@
-import { Instagram, Linkedin, Phone, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, Twitter, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
-import { contactNumbers } from "@/data/marketplaceData";
+import { contactEmail, contactNumbers, socialHandles } from "@/data/marketplaceData";
 
 const navLinks = [
   { label: "Dogs", href: "/marketplace/dogs", testId: "footer-link-dogs" },
@@ -10,9 +10,11 @@ const navLinks = [
 ];
 
 const socials = [
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram", testId: "footer-social-instagram" },
-  { icon: Twitter, href: "https://x.com", label: "X", testId: "footer-social-x" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", testId: "footer-social-linkedin" },
+  { icon: Instagram, href: socialHandles.instagram, label: "Instagram", testId: "footer-social-instagram" },
+  { icon: Facebook, href: socialHandles.facebook, label: "Facebook", testId: "footer-social-facebook" },
+  { icon: Youtube, href: socialHandles.youtube, label: "YouTube", testId: "footer-social-youtube" },
+  { icon: Twitter, href: socialHandles.x, label: "X", testId: "footer-social-x" },
+  { icon: Linkedin, href: socialHandles.linkedin, label: "LinkedIn", testId: "footer-social-linkedin" },
 ];
 
 export default function Footer({ logoUrl }) {
@@ -55,6 +57,10 @@ export default function Footer({ logoUrl }) {
               <span data-testid={`footer-contact-phone-value-${number}`}>{number}</span>
             </a>
           ))}
+          <a href={`mailto:${contactEmail}`} className="swap-footer-link swap-footer-phone" data-testid="footer-contact-email-link">
+            <Mail size={14} />
+            <span data-testid="footer-contact-email-value">{contactEmail}</span>
+          </a>
         </div>
 
         <div className="swap-footer-column" data-testid="footer-social-column">

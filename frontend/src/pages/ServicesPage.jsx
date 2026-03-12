@@ -7,7 +7,7 @@ export default function ServicesPage() {
     <>
       <SeoManager
         title="SWAP | Pet Services"
-        description="Book premium pet grooming, consultation, diagnostics, emergency care, and pharmacy services near you."
+        description="Book comprehensive pet services including grooming, vaccination, diagnostics, emergency care, and pharmacy support."
         image="https://images.unsplash.com/photo-1770836037275-38b44e4b101f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxwcmVtaXVtJTIwdmV0ZXJpbmFyeSUyMGNsaW5pYyUyMGdyb29taW5nJTIwc2VydmljZXxlbnwwfHx8fDE3NzMzNDMzNjJ8MA&ixlib=rb-4.1.0&q=85"
         keywords={siteKeywords}
       />
@@ -18,7 +18,7 @@ export default function ServicesPage() {
             Pet Services
           </h1>
           <p className="listing-description" data-testid="services-page-description">
-            Trusted clinical and wellness services designed for complete pet care.
+            Every tile includes service photo, expert description, and practical care coverage.
           </p>
         </div>
       </section>

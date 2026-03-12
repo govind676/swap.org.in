@@ -7,7 +7,7 @@ export default function BlogsPage() {
     <>
       <SeoManager
         title="SWAP | Pet Care Blogs"
-        description="Read SEO-friendly expert blogs on pet nutrition, grooming, vaccination, and family-friendly pet care."
+        description="Read SEO-focused pet care blogs on grooming, nutrition, vaccines, and family-friendly pet care in India."
         image={blogs[0].image}
         keywords={siteKeywords}
       />
@@ -18,7 +18,7 @@ export default function BlogsPage() {
             Pet Care Blogs
           </h1>
           <p className="listing-description" data-testid="blogs-page-description">
-            Actionable guides for raising healthier, happier pets.
+            SEO-ready articles. Update content anytime from the blog data file.
           </p>
         </div>
       </section>
