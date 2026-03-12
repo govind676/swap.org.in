@@ -4,9 +4,9 @@ export const contactNumbers = ["7818832419", "6299805595"];
 export const contactEmail = "care@swap.org.in";
 
 export const socialHandles = {
-  instagram: "https://www.instagram.com/swap.org.in/",
+  instagram: "https://www.instagram.com/swap.org.in?igsh=M28xeWZncDQ1dDk=",
   facebook: "https://facebook.com/",
-  youtube: "https://www.youtube.com/channel/UCtiHYBZKO88P7zl0gXfoVcw",
+  youtube: "https://www.youtube.com/@swaporgin",
   x: "https://x.com/InSwap33088",
   linkedin: "https://www.linkedin.com/in/swap-org-4020973b7/",
 };
@@ -257,7 +257,7 @@ export const dogBreeds = [
     breedOverview:
       "Mudhol Hounds need active routines and a patient training approach. They are strong, elegant, and best suited to owners with handling experience.",
   },
-].map((dog) => ({ ...dog, ...commonHighlights }));
+].map((dog) => ({ ...dog, species: "dog", ...commonHighlights }));
 
 export const catBreeds = [
   {
@@ -460,7 +460,7 @@ export const catBreeds = [
     breedOverview:
       "Oriental Shorthairs are highly interactive and mentally active. They do best with attention-rich homes and varied daily stimulation.",
   },
-].map((cat) => ({ ...cat, ...commonHighlights }));
+].map((cat) => ({ ...cat, species: "cat", ...commonHighlights }));
 
 export const services = [
   {

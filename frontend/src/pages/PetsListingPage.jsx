@@ -3,13 +3,16 @@ import { PetCard } from "@/components/common/MarketplaceCards";
 import { siteKeywords } from "@/data/marketplaceData";
 
 export default function PetsListingPage({ pageTitle, pageDescription, pets, petType }) {
+  const expectedSpecies = petType === "dogs" ? "dog" : "cat";
+  const listingPets = pets.filter((pet) => !pet.species || pet.species === expectedSpecies);
+
   return (
     <>
       <SeoManager
         title={`SWAP | ${pageTitle}`}
         description={pageDescription}
         keywords={siteKeywords}
-        image={pets?.[0]?.image}
+        image={listingPets?.[0]?.image}
       />
       <section className="listing-hero" data-testid={`${petType}-listing-hero`}>
         <div className="swap-container" data-reveal="true">
@@ -25,7 +28,7 @@ export default function PetsListingPage({ pageTitle, pageDescription, pets, petT
       <section className="section-wrap" data-testid={`${petType}-listing-section`}>
         <div className="swap-container">
           <div className="pet-grid" data-testid={`${petType}-listing-grid`}>
-            {pets.map((pet) => (
+            {listingPets.map((pet) => (
               <PetCard key={pet.slug} pet={pet} petType={petType} />
             ))}
           </div>
