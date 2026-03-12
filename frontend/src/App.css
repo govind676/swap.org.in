@@ -26,8 +26,12 @@
 }
 
 .swap-container {
-    width: min(1160px, calc(100% - 2.5rem));
+    width: min(1220px, calc(100% - 2.5rem));
     margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
 }
 
 .swap-navbar {
@@ -344,7 +348,7 @@
 .pet-grid,
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.2rem;
 }
 
@@ -466,7 +470,7 @@
 
 .profile-info-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 0.95rem;
     margin-top: 0.5rem;
 }
@@ -586,14 +590,6 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .pet-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .profile-info-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .swap-footer-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -602,10 +598,6 @@
 @media (min-width: 768px) {
     .swap-main {
         padding-top: 92px;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .pet-profile-layout,
@@ -620,6 +612,39 @@
 }
 
 @media (max-width: 639px) {
+    .swap-container {
+        width: min(100%, calc(100% - 1.25rem));
+    }
+
+    .section-wrap,
+    .listing-hero {
+        padding: 3.2rem 0;
+    }
+
+    .hero-content {
+        gap: 1rem;
+    }
+
+    .hero-logo-large {
+        width: clamp(110px, 34vw, 180px);
+    }
+
+    .listing-title {
+        font-size: clamp(1.7rem, 8.2vw, 2.2rem);
+    }
+
+    .pet-grid,
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .pet-card-content,
+    .service-card-content,
+    .profile-info-card {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
     .swap-nav-tagline {
         font-size: 0.72rem;
         letter-spacing: 0.05em;
@@ -635,12 +660,18 @@
     .categories-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+}
+
+@media (min-width: 1700px) {
+    .swap-container {
+        width: min(1460px, calc(100% - 5rem));
+    }
 
     .pet-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     }
 
     .services-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }

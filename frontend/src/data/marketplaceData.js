@@ -91,7 +91,7 @@ export const dogBreeds = [
     slug: "labrador-retriever",
     breed: "Labrador Retriever",
     description: "Highly trainable family dog with excellent social temperament.",
-    image: "https://images.unsplash.com/photo-1707509492348-781e4101864f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwxfHxsYWJyYWRvciUyMGRvZyUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MzM0NzMzN3ww&ixlib=rb-4.1.0&q=85",
+    image: "https://images.unsplash.com/photo-1610112747663-45172b603dde?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHw0fHxsYWJyYWRvciUyMGRvZyUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MzM0NzMzN3ww&ixlib=rb-4.1.0&q=85",
     temperament: "Outgoing, gentle, and eager to please.",
     energyLevel: "High",
     breedOverview:
