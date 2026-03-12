@@ -71,6 +71,11 @@ Design and generate a highly aesthetic, modern, minimalistic, responsive, SEO-op
 - Reworked blog dataset to SEO-focused, editable structure (`seoTitle`, `metaDescription`, `focusKeyword`, tags, body)
 - Ran regression via screenshot testing + testing agent, then fixed all reported design/content gaps
 
+### 2026-03-12 (Navigation UX Micro-Update)
+- Added a new aesthetic floating **Back** button across non-home pages
+- Back action now returns users to previous page history, with smart fallback routes when direct-entry history is unavailable
+- Styled back control to match the premium dark + green 3D visual language and mobile responsiveness
+
 ## Prioritized Backlog
 ### P0 (Critical)
 - None blocking for current static frontend scope

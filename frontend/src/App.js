@@ -11,6 +11,7 @@ import BlogDetailPage from "@/pages/BlogDetailPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import BackNavButton from "@/components/common/BackNavButton";
 import { blogs, catBreeds, dogBreeds, logoUrl } from "@/data/marketplaceData";
 
 const AppLayout = () => {
@@ -50,6 +51,7 @@ const AppLayout = () => {
     <div className="swap-site" data-testid="swap-site-shell">
       <Navbar logoUrl={logoUrl} hideTagline={isHomePage} />
       <main className="swap-main" data-testid="swap-main-content">
+        <BackNavButton />
         <Outlet />
       </main>
       {!isHomePage && <Footer logoUrl={logoUrl} />}
