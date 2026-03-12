@@ -4,7 +4,7 @@ export const contactNumbers = ["7818832419", "6299805595"];
 export const contactEmail = "care@swap.org.in";
 
 export const socialHandles = {
-  instagram: "https://www.instagram.com/swap.org.in?igsh=M28xeWZncDQ1dDk=",
+  instagram: "https://www.instagram.com/swap.org.in/",
   facebook: "https://facebook.com/",
   youtube: "https://www.youtube.com/@swaporgin",
   x: "https://x.com/InSwap33088",
@@ -241,7 +241,7 @@ export const dogBreeds = [
     slug: "rajapalayam",
     breed: "Rajapalayam",
     description: "Indian native sighthound known for loyalty and agility.",
-    image: "https://images.unsplash.com/photo-1602580009028-59207e1175e4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBkb2clMjBwb3J0cmFpdCUyMGhkfGVufDB8fHx8MTc3MzM0NzMxNXww&ixlib=rb-4.1.0&q=85",
+    image: "https://images.unsplash.com/photo-1623332965002-654cf9046901?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxpbmRpZSUyMGRvZyUyMGluZGlhJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzczMzQ3Mzk2fDA&ixlib=rb-4.1.0&q=85",
     temperament: "Reserved, loyal, and athletic.",
     energyLevel: "High",
     breedOverview:
