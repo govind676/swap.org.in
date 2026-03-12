@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Navbar({ logoUrl }) {
+export default function Navbar({ logoUrl, hideTagline = false }) {
   return (
     <header className="swap-navbar" data-testid="navbar-shell">
       <div className="swap-container swap-nav-inner">
@@ -11,9 +11,11 @@ export default function Navbar({ logoUrl }) {
           </span>
         </Link>
 
-        <p className="swap-nav-tagline" data-testid="navbar-tagline-text">
-          Premium Pet Marketplace
-        </p>
+        {!hideTagline && (
+          <p className="swap-nav-tagline" data-testid="navbar-tagline-text">
+            Premium Pet Marketplace
+          </p>
+        )}
       </div>
     </header>
   );

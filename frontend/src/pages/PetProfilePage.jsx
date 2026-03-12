@@ -28,7 +28,7 @@ export default function PetProfilePage({ petType }) {
     <>
       <SeoManager
         title={`SWAP | ${pet.breed} ${petType === "dogs" ? "Dog" : "Cat"} Profile`}
-        description={`${pet.breed} profile on SWAP: temperament, age, vaccination status, grooming needs, and enquiry contacts.`}
+        description={`${pet.breed} profile on SWAP: temperament, vaccination status, grooming needs, energy level, and enquiry contacts.`}
         image={pet.image}
         keywords={siteKeywords}
       />

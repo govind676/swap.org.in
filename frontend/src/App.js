@@ -15,6 +15,7 @@ import { blogs, catBreeds, dogBreeds, logoUrl } from "@/data/marketplaceData";
 
 const AppLayout = () => {
   const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -47,11 +48,11 @@ const AppLayout = () => {
 
   return (
     <div className="swap-site" data-testid="swap-site-shell">
-      <Navbar logoUrl={logoUrl} />
+      <Navbar logoUrl={logoUrl} hideTagline={isHomePage} />
       <main className="swap-main" data-testid="swap-main-content">
         <Outlet />
       </main>
-      <Footer logoUrl={logoUrl} />
+      {!isHomePage && <Footer logoUrl={logoUrl} />}
     </div>
   );
 };
